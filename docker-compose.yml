@@ -16,6 +16,8 @@ services:
       - "80:80"
     networks:
       - "prestashop-net"
+    environment:
+     - "VIRTUAL_HOST=ecosnacks.space"
 
 networks:
   prestashop-net: 
